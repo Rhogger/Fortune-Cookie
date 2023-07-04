@@ -68,16 +68,14 @@ p {
   margin: 14rem 0 26rem 0;
 }
 
-.lucky-message .message-card {
+.message-card {
   background-color: var(--bg-message);
 
   padding: 10rem;
   margin: 17rem 0 60rem 0;
 
   box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
-}
 
-.message-card p {
   color: var(--c-message);
   text-align: center;
   font-size: 24rem;
@@ -105,6 +103,10 @@ p {
 
 .discover img:hover {
   animation: shake 0.5s infinite;
+}
+
+.message-card {
+  animation: show-ticket 1s;
 }
 
 @keyframes shake {
@@ -150,5 +152,19 @@ p {
 
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes show-ticket {
+  0% {
+    width: 0%;
+    font-size: 0rem;
+    transform: translateY(140px)
+  }
+
+  100% {
+    width: 100%;
+    font-size: 24rem;
+    transform: translateY(0px);
   }
 }
