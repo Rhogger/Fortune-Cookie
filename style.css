@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 6.25%;
+
+  --ff-title: Montserrat;
+  --ff-text: DM Sans;
+  --ff-ticket: Dancing Script;
+
+  --bg-primary: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  --bg-card: #FFF;
+  --bg-message: #E4EDF1;
+  --bg-button: #FF9500;
+
+  --c-text: #34355B;
+  --c-button: #FFF;
+  --c-message: #000;
+}
+
+body {
+  background: var(--bg-primary);
+
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background-color: var(--bg-card);
+
+  width: 100%;
+  max-width: 428rem;
+
+  padding: 48rem 64rem 64rem 64rem;
+  border-radius: 5px;
+
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+h1,
+h2 {
+  color: var(--c-text);
+  text-align: center;
+  font-size: 24rem;
+  font-family: var(--ff-title);
+}
+
+p {
+  color: var(--c-text);
+  text-align: center;
+  font-size: 15rem;
+  font-family: var(--ff-text);
+}
+
+.discover,
+.lucky-message {
+  display: grid;
+  place-items: center;
+}
+
+.discover p {
+  margin: 14rem 0 26rem 0;
+}
+
+.lucky-message .message-card {
+  background-color: var(--bg-message);
+
+  padding: 10rem;
+  margin: 17rem 0 60rem 0;
+
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+}
+
+.message-card p {
+  color: var(--c-message);
+  text-align: center;
+  font-size: 24rem;
+  font-family: var(--ff-ticket);
+}
+
+.lucky-message button {
+  background: var(--bg-button);
+
+  padding: 16rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 60rem;
+
+  color: var(--c-button);
+  font-size: 15rem;
+  font-family: var(--ff-text);
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+
+.discover img:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
