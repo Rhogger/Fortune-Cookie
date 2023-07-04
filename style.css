@@ -157,14 +157,10 @@ p {
 
 @keyframes show-ticket {
   0% {
-    width: 0%;
-    font-size: 0rem;
-    transform: translateY(140px)
+    transform: translateY(140px) scale(0.1);
   }
 
   100% {
-    width: 100%;
-    font-size: 24rem;
-    transform: translateY(0px);
+    transform: translateY(0px) scale(1);
   }
 }
